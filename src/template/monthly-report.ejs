@@ -1,0 +1,18 @@
+<p>Dear <%= user.username %>,</p>
+
+<p>Here is your salary statement for the month:</p>
+
+<ul>
+  <li><strong>Username:</strong> <%= user.username %></li>
+  <li><strong>Email:</strong> <%= user.email %></li>
+  <li><strong>Date:</strong> <%= date %></li>
+</ul>
+
+<p><strong>Actual Salary:</strong> ₹<%= actualSalary.toFixed(2) %></p>
+<p><%= deductionDetails %></p>
+<p><strong>Final Salary:</strong> ₹<%= finalSalary.toFixed(2) %></p>
+
+<p>
+  Best regards,<br />
+  Finance Team
+</p>

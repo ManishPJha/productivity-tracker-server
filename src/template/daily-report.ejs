@@ -1,0 +1,24 @@
+<p>Dear <%= user.username %>,</p>
+
+<p>
+  You have only tracked <%= hoursTracked %> hours and <%= minutesTracked %>
+  minutes today. Here is a summary of your tracking periods:
+</p>
+
+<ul>
+  <li><strong>Username:</strong> <%= user.username %></li>
+  <li><strong>Email:</strong> <%= user.email %></li>
+  <li><strong>Date:</strong> <%= date %></li>
+</ul>
+
+<p><%= activityDetails %></p>
+
+<p>
+  Please make sure to complete <%= activityThreshold / (60 * 60 * 1000) %> hours
+  of tracking.
+</p>
+
+<p>
+  Best regards,<br />
+  Tracker Team
+</p>
